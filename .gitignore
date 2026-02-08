@@ -2,6 +2,7 @@
 # Airflow runtime artifacts
 ############################
 logs/
+config/airflow.cfg
 airflow.db
 airflow-webserver.pid
 standalone_admin_password.txt
