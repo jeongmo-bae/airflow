@@ -42,6 +42,9 @@ curl -LfO 'https://airflow.apache.org/docs/apache-airflow/3.1.7/docker-compose.y
     docker compose up -d
     ```
 
+- local python settings
+  - airflow-scheduler image 내 python interpreter 사용 하도록 IDE 설정
+
 
 ## references
 - (local - standalone) https://airflow.apache.org/docs/apache-airflow/stable/start.html
