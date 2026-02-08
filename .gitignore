@@ -1,6 +1,58 @@
-# Ignore macOS metadata files
-.DS_Store
-# Ignore Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-# Ignore Python cache files
+############################
+# Airflow runtime artifacts
+############################
+logs/
+airflow.db
+airflow-webserver.pid
+standalone_admin_password.txt
+
+############################
+# Environment & secrets
+############################
+.env
+.env.*
+*.env
+
+############################
+# Python cache / virtualenv
+############################
 __pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+############################
+# Docker
+############################
+docker-data/
+docker-volumes/
+*.tar
+*.log
+
+############################
+# IDE
+############################
+.idea/
+.vscode/
+*.iml
+
+############################
+# OS
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# Test / coverage
+############################
+.coverage
+htmlcov/
+.pytest_cache/
+
+############################
+# Airflow local override (optional)
+############################
+#airflow_local_settings.py
