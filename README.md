@@ -43,7 +43,14 @@ curl -LfO 'https://airflow.apache.org/docs/apache-airflow/3.1.7/docker-compose.y
     ```
 
 - local python settings
-  - airflow-scheduler image 내 python interpreter 사용 하도록 IDE 설정
+  - airflow-airflow-worker-1 image 내 python interpreter 와 동일한 버전의 파이썬 인터프리터 설치(3.12.12)
+  - ```shell
+    python -m venv .venv # 가상환경 생성
+    ```
+  - airflow library 설치 (https://airflow.apache.org/docs/apache-airflow/stable/installation/installing-from-pypi.html)
+    - ```shell 
+      pip install "apache-airflow[celery]==3.1.7" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-3.1.7/constraints-3.12.txt"
+      ``` 
 
 
 ## references
