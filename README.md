@@ -9,6 +9,12 @@ curl -LfO 'https://airflow.apache.org/docs/apache-airflow/3.1.7/docker-compose.y
   - airflow-dag-processor - Dag 프로세서는 Dag 파일을 구문 분석
   - airflow-api-server - API 서버는 다음 주소에서 이용 가능 (http://localhost:8080)
   - airflow-worker - 스케줄러가 지정한 작업을 실행하는 작업자 
+    - ```yaml
+      AIRFLOW__LOGGING__LOGGING_LEVEL: DEBUG
+      ```
+    - ```shell
+      docker-compose up -d --no-deps airflow-worker
+      ```
   - airflow-triggerer - 지연 가능한 작업을 위해 이벤트 루프를 실행 
   - airflow-init - 초기화 서비스 
   - postgres - DB
