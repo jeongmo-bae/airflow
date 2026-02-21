@@ -9,7 +9,7 @@ from airflow.sdk import (
 # from airflow.sdk.definitions.param import ParamsDict
 
 with DAG(
-    dag_id="dags_bash_operator",
+    dag_id="BashOperator_0",
     schedule="0 0 * * *",   # 분 시 일 월 요일
     start_date=pendulum.datetime(2026, 2, 21, tz="Asia/Seoul"),
     catchup=False,   # start_date 부터 현재시각 사이를 모두 수행 시킬거냐 - 순서대로 X = 멱등적인지에 따라 문제가 될 수도
