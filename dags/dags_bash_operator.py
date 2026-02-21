@@ -37,4 +37,5 @@ with DAG(
         bash_command="echo $HOSTNAME; echo good",
     )
 
-    bash_t1 >> bash_t2 >> bash_t3 >> bash_t4
+    bash_t1 >> bash_t2 >> [ bash_t3, bash_t4 ]
+    bash_t1 >> bash_t4
