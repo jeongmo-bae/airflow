@@ -6,7 +6,7 @@ from airflow.sdk import DAG
 import pendulum
 from airflow.sdk.definitions.decorators import task
 
-from python.common.log_utils import timer
+from python.common.timer import timer
 
 logger = logging.getLogger(__name__)
 @task(task_id='test_jinja_with_task_decorator')

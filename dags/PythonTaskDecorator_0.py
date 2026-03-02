@@ -5,7 +5,7 @@ from airflow.sdk.definitions.decorators import task
 from airflow.providers.standard.operators.bash import BashOperator
 from airflow.providers.standard.operators.empty import EmptyOperator
 
-from python.common.log_utils import timer
+from python.common.timer import timer
 from python.sample_PythonOperator_1 import get_job_run_info
 
 @task(task_id="task_get_job_run_info")

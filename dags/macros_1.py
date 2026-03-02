@@ -7,7 +7,7 @@ from airflow.sdk import DAG
 from airflow.sdk.definitions.decorators import task
 from dateutil.relativedelta import relativedelta
 
-from python.common.log_utils import timer
+from python.common.timer import timer
 from python.common.logger import MyLogger
 
 logger = MyLogger(__name__)
